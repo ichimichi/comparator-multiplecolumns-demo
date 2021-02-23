@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PlayerApp2.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">demojava</a> &gt; <a href="index.source.html" class="el_package">com.stackroute.demojava</a> &gt; <span class="el_source">PlayerApp2.java</span></div><h1>PlayerApp2.java</h1><pre class="source lang-java linenums">package com.stackroute.demojava;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+<span class="nc" id="L7">public class PlayerApp2 {</span>
+	
+	
+	public static void main(String[] args) {
+
+<span class="nc" id="L12">		Player player1 = new Player(3, &quot;Ivan Lendl&quot;, &quot;Tennis&quot;);</span>
+<span class="nc" id="L13">		Player player2 = new Player(2, &quot;Matts Wilander&quot;, &quot;Tennis&quot;);</span>
+<span class="nc" id="L14">		Player player3 = new Player(4, &quot;Sachin Tendulkar&quot;, &quot;Cricket&quot;);</span>
+<span class="nc" id="L15">		Player player4 = new Player(1, &quot;Maradona&quot;, &quot;Football&quot;);</span>
+		
+<span class="nc" id="L17">	    List&lt;Player&gt; playerlist = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L18">		playerlist.add(player1);</span>
+<span class="nc" id="L19">		playerlist.add(player2);</span>
+<span class="nc" id="L20">		playerlist.add(player3);</span>
+<span class="nc" id="L21">		playerlist.add(player4);</span>
+		
+<span class="nc bnc" id="L23" title="All 2 branches missed.">		for(Player player: playerlist) {</span>
+<span class="nc" id="L24">			System.out.println(player);</span>
+		}
+	 
+<span class="nc" id="L27">		System.out.println(&quot;=======&quot;);</span>
+<span class="nc" id="L28">		Collections.sort(playerlist);</span>
+		
+<span class="nc bnc" id="L30" title="All 2 branches missed.">		for(Player player: playerlist) {</span>
+<span class="nc" id="L31">			System.out.println(player);</span>
+		}
+	 	
+		
+
+<span class="nc" id="L36">	}</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
